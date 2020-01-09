@@ -104,5 +104,66 @@
             "id": 3,
             "name": "Atlanta"
         }
+    ],
+    "customers": [
+        {
+            "id": 1,
+            "name":"McDonalds"
+        },
+        {
+            "id": 2,
+            "name": "Wendy's"
+        },
+        {
+            "id": 3,
+            "name": "Burger King"
+        }
+    ],
+    "customerEmployees": [
+        {
+            "id": 1,
+            "customerId":1,
+            "employeeId":1
+        },
+        {
+            "id": 2,
+            "customerId":2,
+            "employeeId":2
+        },
+        {
+            "id": 3,
+            "customerId":3,
+            "employeeId":3
+        }, {
+            "id": 4,
+            "customerId":1,
+            "employeeId":4
+        },
+        {
+            "id": 5,
+            "customerId": 2,
+            "employeeId":5
+        },
+        {
+            "id": 6,
+            "customerId": 3,
+            "employeeId":1
+        },
+        {
+            "id": 7,
+            "customerId":1,
+            "employeeId":2
+        },
+        {
+            "id": 8,
+            "customerId": 2,
+            "employeeId":3
+        },
+        {
+            "id": 9,
+            "customerId": 3,
+            "employeeId":4
+        }
+
     ]
 }

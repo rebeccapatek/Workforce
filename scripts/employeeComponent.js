@@ -1,4 +1,4 @@
-const Employee = (employee, computer, dep, loc) => {
+const Employee = (employee, computer, dep, loc, foundclientArray) => {
     return `
     <div class="employee">
             <header class="emplyee__name">
@@ -13,6 +13,17 @@ const Employee = (employee, computer, dep, loc) => {
             <section class="employee__location">
                 Works at the ${loc.name} office
             </section>
+            <section class="employee__clients">
+                Clients include:
+                <ol>
+                ${
+                    foundclientArray.map(c => {
+                        return `<li>${c.name}</li>`
+                    }).join("")
+                }
+                </ol>
+            </section>
+
         </div>
     `
 }
