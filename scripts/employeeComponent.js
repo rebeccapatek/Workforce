@@ -1,19 +1,18 @@
-const Employee = (employee, computer) => {
+const Employee = (employee, computer, dep) => {
     return `
-        <section class="employee">
-            <header>
-                <h2>${employee.firstName} ${employee.lastName}</h2>
+    <div class="employee">
+            <header class="emplyee__name">
+                <h1>${employee.firstName} ${employee.lastName}</h1>
             </header>
-            <div>
-                Age ${employee.age}
-            </div>
-            <div>
-                Computer:
-                <h2> Model: ${computer.model} </h2>
-                <h4> Year: ${computer.year} </h4>
-            </div>
-        </section>
+            <section class="employee__computer">
+                 Currently using a ${computer.year} ${computer.model}
+            </section>
+            <section class="employee__department">
+                Works in the ${dep.name}
+            </section>
+        </div>
     `
 }
+
 
 export default Employee
